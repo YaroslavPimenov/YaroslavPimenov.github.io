@@ -1,1 +1,5 @@
-remote_theme: pages-themes/cayman@v0.2.0
+title: Tactile theme
+description: Tactile is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-tactile
