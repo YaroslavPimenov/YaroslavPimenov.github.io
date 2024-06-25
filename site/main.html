@@ -6,12 +6,12 @@
 	<title>Полтавський професійний ліцей транспорту</title>
     <link rel="stylesheet" href="/site/styles.css">
 </head>
-	<body>
+	<body onload="startTime()">
 		<header>
             <img src="train.png">
             <h2>Сторiнка викладача</h2>
             <h3>Полтавського професiйного лiцею транспорту</h3>
-            <div>
+            <div class="buttons">
                 <font size="4">
                     <ul>
                         <li>
@@ -41,9 +41,9 @@
                         </li>
                         <li class="dropDown">
                             <button class="button">
-                                <a class="astyle" href="/site/do-uroku.html">До урокуᨆ</a>
+                                <a class="astyle">До урокуᨆ</a>
                                 <ul class="dropDownContent">
-                                    <li><a class="astyle" href="/site/lessons/conspects.html">Конспекти урокiв</a></li>
+                                    <li ><a class="astyle" href="/site/lessons/conspects.html">Конспекти урокiв</a></li>
                                     <li><a class="astyle" href="/site/lessons/examination.html">Перевiрка знань</a></li>
                                     <li><a class="astyle" href="/site/lessons/videos.html">Вiдео</a></li>
                                 </ul>
@@ -57,7 +57,14 @@
                     </ul>
                 </font>                
             </div>
-        </header>
+        </header>        
+        <div class="MON">
+            <a href="https://mon.gov.ua/">
+                <img class="monpic" src="https://3.bp.blogspot.com/-tpoCJ1xeq7s/XpBIAkXmseI/AAAAAAAASN4/xJOSM2XEa3YZIcxL-sWRE6Y6f7uhbwmtACK4BGAYYCw/s1600/original-1.webp">
+                <p class="monP">МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ</p>
+            </a>
+        </div>
+        <h3 class="abitur">Інформація для абітурієнтів</h3>
         <div class="profesions_win">
             <div class="prof_win">
                 <h4>Електрогазозварник 2-го розряду</h4>
@@ -75,8 +82,112 @@
                 <a class="linkButton" href="/site/navchaemos.html">Повний опис ›</a>
             </nav>
         </div>
+        <h3 class="links">Корисні посилання</h3>
+        <div class="mainQR">
+            <a href="https://yaroslavpimenov.github.io/site/main">
+                <img src="/site/images/QR.png">
+                <p class="linkSite">QR-код сторінки викладача</p>
+            </a>
+        </div>
+        <div class="qrLink">
+            <a href="https://pplt.poltava.ua/">
+                <img src="/site/images/QR_Site.png">
+                <p class="linkSite">Полтавський професiйний ліцей транспорту</p>
+            </a>   
+        </div>
+        <h3 class="calInfo">Календар</h3>
+        <div class="calendar">
+            <svg style="visibility:hidden;" width="0" height="0"> 
+                <filter id="duotone" color-interpolation-filters="sRGB">         
+                    <feColorMatrix type="matrix" values="0.7 0 0 0 0.3 0.6 0 0 0 0.2 0.3 0 0 0 0.6 0 0 0 1 0">
+                    </feColorMatrix> 
+                </filter>
+            </svg>
+            <div class="container">
+                <div class="card">
+                <div class="front">
+                    <div class="contentfront">
+                        <div class="month">
+                            <table>
+                                <tr class="orangeTr">
+                                    <th>M</th>
+                                    <th>T</th>
+                                    <th>W</th>
+                                    <th>T</th>
+                                    <th>F</th>
+                                    <th>S</th>
+                                    <th>S</th>
+                                </tr>
+                                <tr class="whiteTr">
+                                    <th></th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                </tr>
+                                <tr class="whiteTr">
+                                    <th>7</th>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>11</th>
+                                    <th>12</th>
+                                    <th>13</th>
+                                </tr>
+                                <tr class="whiteTr">
+                                    <th>14</th>
+                                    <th>15</th>
+                                    <th>16</th>
+                                    <th>17</th>
+                                    <th>18</th>
+                                    <th>19</th>
+                                    <th>20</th>
+                                </tr>
+                                <tr class="whiteTr">
+                                    <th>21</th>
+                                    <th>22</th>
+                                    <th>23</th>
+                                    <th>24</th>
+                                    <th>25</th>
+                                    <th>26</th>
+                                    <th>27</th>
+                                </tr>
+                                <tr class="whiteTr">
+                                    <th>28</th>
+                                    <th>29</th>
+                                    <th>30</th>
+                                    <th>31</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </table>
+                        </div>
+                            <div class="date">
+                                <div class="datecont">
+                                    <div id="date"></div>
+                                    <div id="day"></div>
+                                    <div id="month"></div>
+                                    <i class="fa fa-pencil edit" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="back">
+                    <div class="contentback">
+                        <div class="backcontainer">
+                            <a class="backText"></br><p>ПОТОЧНИЙ</br> КАЛЕНДАРНИЙ МІСЯЦЬ</p></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
         <footer>
-            <p class="a2style">© 2023 Полтавський професійний ліцей транспорту. Всі права захищені.</p>
+            <p class="a2style">&copy 2023-2024 Полтавський професійний ліцей транспорту. Всі права захищені.</p>
         </footer>
+        <script src="/site/scripts.js"></script>
 	</body>
 </html>
